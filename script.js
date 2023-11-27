@@ -1,4 +1,15 @@
 
+document.getElementById('undobtn').addEventListener('click', function () {
+    document.execCommand('undo', false, null);
+    saveContent();
+});
+
+document.getElementById('redobtn').addEventListener('click', function () {
+    document.execCommand('redo', false, null);
+    saveContent();
+});
+
+
 document.getElementById('align-leftbtn').addEventListener('click', function () {
     document.execCommand('justifyLeft', false, null);
     saveContent();
@@ -49,5 +60,6 @@ document.getElementById('boldbtn').addEventListener('click', function () {
     document.execCommand('bold', false, null);
     saveContent();
 });
+
 
 
