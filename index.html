@@ -16,6 +16,16 @@
 </head>
 <body>
 
+    <div class="ribbon">
+        <div class="color-palette" id="colorPalette">
+            <input type="color" id="colorPicker" onchange="applyColor()">
+        </div>
+
+        <button onclick="toggleColorPalette()">
+            <b id="colorBtn">A</b>
+        </button>
+    </div>
+
     <div class="editor_container">
         <div id="editor" contenteditable="true"></div>
     </div>
